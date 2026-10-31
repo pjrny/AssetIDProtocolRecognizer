@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "assetidprotocolrecognizer",
+  "account_id": "0adfeaaccd1d2cfa389d7bcd33b55ee4",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": { "enabled": true },
+  "vars": { "MAX_BYTES": "10000000", "MAX_PIXELS": "40000000" }
+  // Secret (required, the Worker fails closed without it):
+  //   npx wrangler secret put RECOGNIZER_SECRET 
+}
